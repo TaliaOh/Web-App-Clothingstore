@@ -8,4 +8,10 @@ router.get('/', controller.getAllProducts);
 
 router.get('/:pid', controller.getProductById);
 
+router.post('/', controller.createProduct);
+
+router.patch('/:pid', controller.updateProduct);
+
+router.delete('/:pid', controller.deleteProduct);
+
 module.exports = router;
