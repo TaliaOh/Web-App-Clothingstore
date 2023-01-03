@@ -65,6 +65,13 @@ const deleteUser = (req, res, next) => {
 
 const signup = (req, res, next) => {
   const { id, name, email, password } = req.body;
+
+  const hasUser = DUMMY_DATA.find((u) => u.email === email);
+  if (hasUser) {
+    return next(
+      new HttpError('Could not create user, email already exists.', 422)
+    );
+  }
   const createdUser = {
     id,
     name,
@@ -88,7 +95,7 @@ const login = (req, res, next) => {
       )
     );
   }
-  res.json({message: 'Logged in!'})
+  res.json({ message: 'Logged in!' });
 };
 
 exports.getAllUsers = getAllUsers;

@@ -3,8 +3,9 @@ const HttpError = require('../models/http-error');
 let DUMMY_DATA = [
   {
     id: 'o1',
-    totalPrice: 'T-shirt',
     products: [],
+    totalPrice: 'T-shirt',
+    date: '',
     creator: 'u1',
   },
 ];
