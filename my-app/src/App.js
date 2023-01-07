@@ -7,6 +7,7 @@ import products from "./data";
 import CategoryItems from "./components/Card/CategoryItems";
 import ProductCard from "./components/Products/ProductCard";
 import ProductPage from "./components/Products/ProductPage";
+import CategoryPage from "./components/Category/CategoryPage";
 function App() {
   return (
     <Router>
@@ -16,6 +17,10 @@ function App() {
         <Route
           path="/:title"
           element={<CategoryItems categoryItems={products} />}
+        />
+        <Route
+          path="/categories"
+          element={<CategoryPage categories={products} />}
         />
         <Route
           path="/products/:productId"

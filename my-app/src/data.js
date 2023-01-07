@@ -7,6 +7,11 @@ const products = [
     product: "Silver Jacket",
     price: 200,
     img: "https://www.factory54.co.il/on/demandware.static/-/Sites-master-catalog/default/dw7c4b06d3/images/large/850171750_P_1.png",
+    imgList: [
+      "https://www.factory54.co.il/dw/image/v2/BFLR_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd35cc08d/images/models/850171750_L_3.JPG?sw=113&sh=170",
+      "https://www.factory54.co.il/dw/image/v2/BFLR_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9f7c3d2e/images/large/850171750_P_2.png?sw=113&sh=170",
+      "https://www.factory54.co.il/dw/image/v2/BFLR_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe07b000b/images/models/850171750_L_2.JPG?sw=113&sh=170",
+    ],
     desc: `Sweatshirt from Isabel Marant made of a combination of high-quality and pleasant cotton in a gray shade with a logo print on the front. The item has a straight and relaxed cut with a rounded collar and long sleeves with rib sayings. `,
   },
   {
@@ -22,7 +27,7 @@ const products = [
   {
     id: 3,
     title: "ISABEL MARANT",
-    category: "ISABELMARANT",
+    category: "TOMMY",
     type: "shirt",
     product: "White T-shirt",
     price: 150,
