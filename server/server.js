@@ -45,6 +45,6 @@ mongoose
     'mongodb+srv://Danielmishan:Danielush7598@cluster0.cwwwndg.mongodb.net/clothingStore?retryWrites=true&w=majority'
   )
   .then(() => {
-    server.listen(5000, () => console.log('connected to db'));
+    server.listen(5000, () => console.log('connecte db'));
   })
   .catch((err) => console.log(err));
